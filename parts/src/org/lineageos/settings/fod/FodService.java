@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,7 +37,7 @@ public class FodService extends Service {
             if (Intent.ACTION_SCREEN_ON.equals(action)) {
                 try {
                     IDisplayFeature mDisplayFeature = IDisplayFeature.getService();
-                    mDisplayFeature.setFeature(0, 1, 2, 255);
+                    mDisplayFeature.setFeature(0, 2, 2, 255);
                     mDisplayFeature.setFeature(0, 3, 0, 255);
                 } catch (Exception e) {
                     // Do nothing
